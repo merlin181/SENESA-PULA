@@ -1,0 +1,121 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(140deg, #031a33, #06254a);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR (same theme as homepage) */
+.navbar {
+    background: rgba(6, 37, 74, 0.65);
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container img {
+    width: 45px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #4db7d4;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px 40px;
+    max-width: 850px;
+    box-shadow: 0 0 25px rgba(77, 183, 212, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+.about-card h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 25px;
+    font-weight: 900;
+    background: linear-gradient(to right, #4db7d4, #f28c28);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-card p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #e7f4ff;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #4db7d4;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

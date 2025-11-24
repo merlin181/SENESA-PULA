@@ -1,0 +1,133 @@
+/* GENERAL PAGE STYLE */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(140deg, #031a33, #06254a);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION */
+.navbar {
+    background: rgba(6, 37, 74, 0.65);
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+    padding: 12px 0;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container img {
+    width: 45px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #e7f4ff;
+}
+.nav-links a:hover {
+    color: #f28c28
+}
+
+.nav-links li {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-links li:hover {
+    color: #4db7d4;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* HERO SECTION */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 20px 20px;
+    text-align: center;
+}
+
+.logo img {
+    margin-top: -20px;
+    width: 240px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(77, 183, 212, 0.35));
+    transition: 0.4s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.07);
+}
+
+h1 {
+    margin-top: 25px;
+    font-size: 48px;
+    font-weight: 900;
+    background: linear-gradient(to right, #4db7d4, #f28c28);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+.highlight {
+    color: #f28c28;
+}
+
+/* PARAGRAPH */
+p {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: -10px;
+    color: #e7f4ff;
+}
+
+/* BUTTON (optional if you add one later) */
+/*.btn {
+    background-color: #4db7d4;
+    padding: 14px 32px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #06254a;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.95;
+}
+*/
